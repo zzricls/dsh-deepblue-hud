@@ -4,12 +4,32 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 ![version](https://img.shields.io/badge/version-0.2.0-38bdf8)
+![DSH](https://img.shields.io/badge/DSH-0.2.x-0a1524)
+![platform](https://img.shields.io/badge/platform-win%20%7C%20mac%20%7C%20linux-1c3450)
 
 `dsh-deepblue-hud` 是一个 DSH **bundle 插件**（Host 半 + Client 半）。装上后：
 
 - **右下角**常驻一个可折叠的 `Cockpit` 浮层，展开是三组面板，折叠后只剩一条标题栏；
 - 整个 Web UI 变成深蓝配色（约 60% 深蓝底 / 30% 层级过渡 / 10% 潮汐蓝强调）；
 - 卸载或停用后界面**完全恢复原样**。
+
+---
+
+## 安装
+
+仓库里带着构建好的 `lib/`，任何一种装法**都不需要再 build**。
+
+```bash
+# 1) 直接从 GitHub 装
+dsh plugin --profile <profile> add github:zzricls/dsh-deepblue-hud
+
+# 2) 已克隆到本地时
+dsh plugin --profile <profile> add /absolute/path/to/dsh-deepblue-hud
+
+# 3) 在 DSH 的 Plugin Manager 里：install_bundle，target 填包的绝对路径
+```
+
+装完重开 Harness：右下角（输入区上方）出现 `Cockpit`，界面变深蓝。停用插件即完全还原。
 
 ---
 
@@ -49,12 +69,6 @@
 ---
 
 ## 安装
-
-在 DSH 的 Plugin Manager 里安装这个目录（`install_bundle`，参数是这个包的绝对路径），或在已配置 profile 的机器上：
-
-```bash
-dsh plugin --profile <profile> add /absolute/path/to/dsh-deepblue-hud
-```
 
 包内 `cordis.patch.yml` 会插入一行 `deepblue-hud` 插件行，Client 半通过 `dsh.client` 声明被自动打包进 Web 页面，不需要手工改配置。
 
