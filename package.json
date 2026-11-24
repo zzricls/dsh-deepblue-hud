@@ -31,6 +31,15 @@
     "theme"
   ],
   "license": "MIT",
+  "author": "Zhang-Zhibo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzricls/dsh-deepblue-hud.git"
+  },
+  "homepage": "https://github.com/zzricls/dsh-deepblue-hud#readme",
+  "bugs": {
+    "url": "https://github.com/zzricls/dsh-deepblue-hud/issues"
+  },
   "icon": "./icon.svg",
   "meta": {
     "title": "Deep Blue Cockpit HUD",
