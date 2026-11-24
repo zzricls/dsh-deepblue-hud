@@ -85,6 +85,6 @@
     "typecheck": "tsc --noEmit",
     "smoke": "node scripts/smoke.mjs",
     "verify": "tsc --noEmit && tsdown && node scripts/fix-client-map.mjs && node scripts/smoke.mjs",
-    "prepublishOnly": "npm run verify"
+    "prepublishOnly": "tsc --noEmit && tsdown && node scripts/fix-client-map.mjs && node scripts/smoke.mjs"
   }
 }
