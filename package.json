@@ -31,6 +31,12 @@
     "theme"
   ],
   "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Zhang-Zhibo",
   "repository": {
     "type": "git",
