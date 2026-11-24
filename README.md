@@ -14,6 +14,8 @@
 - 整个 Web UI 变成深蓝配色（约 60% 深蓝底 / 30% 层级过渡 / 10% 潮汐蓝强调）；
 - 卸载或停用后界面**完全恢复原样**。
 
+![深蓝驾驶舱 HUD 实际运行截图](https://raw.githubusercontent.com/zzricls/dsh-deepblue-hud/main/docs/screenshot.png)
+
 ---
 
 ## 安装
