@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Deep Blue Cockpit HUD">
+  <rect width="64" height="64" rx="14" fill="#0a1524"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#1f3754" stroke-width="1.5"/>
+  <path d="M14 40a18 18 0 0 1 36 0" fill="none" stroke="#1c3450" stroke-width="4" stroke-linecap="round"/>
+  <path d="M14 40a18 18 0 0 1 22.5-17.5" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="40" r="3.2" fill="#e2eaf5"/>
+  <path d="M32 40 44 26" stroke="#e2eaf5" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="32" cy="40" r="6" fill="none" stroke="#294669" stroke-width="1.2"/>
+  <rect x="17" y="47" width="30" height="3" rx="1.5" fill="#1f3754"/>
+  <rect x="17" y="47" width="19" height="3" rx="1.5" fill="#34d399"/>
+</svg>

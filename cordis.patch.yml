@@ -1,0 +1,17 @@
+# dsh-deepblue-hud bundle patch: mount the plugin into the profile composition
+# tree.
+#
+# A bundle is a package whose package.json declares `dsh.bundle.patch`, and the
+# Loader applies every bundle's patch list, in bundle order, over the empty root.
+# The shape is a top-level YAML array of patch entries; this one is a single
+# `insert` list holding the plugin row.
+#
+# Installing the bundle (Plugin Manager `install_bundle`, or the `dsh` CLI) makes
+# the package a bundle of the profile, and this insert is what actually mounts
+# the row — no manual configuration is needed.
+#
+# To change the row's config later, override it by `id` in the profile's own
+# cordis.patch.yml user layer instead of inserting a second same-id row.
+- insert:
+    - id: deepblue-hud
+      name: 'dsh-deepblue-hud'
