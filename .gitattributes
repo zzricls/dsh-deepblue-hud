@@ -1,0 +1,9 @@
+# Keep line endings stable across Windows/macOS contributors: sources are LF in
+# the repository and converted on checkout, while build artifacts and assets are
+# left byte-for-byte.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.woff2 binary
+*.map binary
