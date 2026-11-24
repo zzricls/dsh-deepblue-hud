@@ -2,6 +2,7 @@
 
 > 深蓝驾驶舱 HUD —— 给 DeepSeek Harness Web UI 加一块常驻的「仪表盘」浮层：会话经济、系统体征、工具轨迹，同时把整套界面切成深蓝主题。
 
+[![npm](https://img.shields.io/npm/v/dsh-deepblue-hud)](https://www.npmjs.com/package/dsh-deepblue-hud)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 ![version](https://img.shields.io/badge/version-0.2.0-38bdf8)
 ![DSH](https://img.shields.io/badge/DSH-0.2.x-0a1524)
@@ -17,19 +18,18 @@
 
 ## 安装
 
-仓库里带着构建好的 `lib/`，任何一种装法**都不需要再 build**。
-
 ```bash
-# 1) 直接从 GitHub 装
+# 1) 从 npm 装（推荐；DSH 的 Plugin Manager 也能按包名装）
+dsh plugin --profile <profile> add dsh-deepblue-hud
+
+# 2) 从 GitHub 装（不经 npm，需要 git）
 dsh plugin --profile <profile> add github:zzricls/dsh-deepblue-hud
 
-# 2) 已克隆到本地时
+# 3) 本地目录
 dsh plugin --profile <profile> add /absolute/path/to/dsh-deepblue-hud
-
-# 3) 在 DSH 的 Plugin Manager 里：install_bundle，target 填包的绝对路径
 ```
 
-装完重开 Harness：右下角（输入区上方）出现 `Cockpit`，界面变深蓝。停用插件即完全还原。
+包内已带构建产物 `lib/` / `cordis.patch.yml`，三种装法**都不需要再 build**。装完重开 Harness：右下角（输入区上方）出现 `Cockpit`，界面变深蓝。停用插件即完全还原。
 
 ---
 
